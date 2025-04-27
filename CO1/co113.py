@@ -1,0 +1,6 @@
+x=input("enter list color")
+y=x.split(",")
+z=len(y)
+print(z)
+print(x)
+print(y[0],y[z-1])
