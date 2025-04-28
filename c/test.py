@@ -1,3 +1,10 @@
-l1=list(map(int,input("enter list").split()))
-l2=[x for x in l1 if x%2==0 ]
-print(l2)
+def fact(n):
+   
+    fact=1
+    for i in range(1,n+1):
+        fact=fact*i
+    
+    return fact
+n=int(input("enter number:"))    
+print(fact(n))        
+     
