@@ -1,10 +1,9 @@
-def fact(n):
-   
-    fact=1
-    for i in range(1,n+1):
-        fact=fact*i
-    
-    return fact
-n=int(input("enter number:"))    
-print(fact(n))        
-     
+def fib(n):
+    a,b=0,1
+    for _ in range(n):
+        print(a,end="")
+        a,b=b,a+b
+        
+n=int(input("enter the n"))
+fib(n)        
+        
