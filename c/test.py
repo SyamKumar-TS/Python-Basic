@@ -1,9 +1,7 @@
-def fib(n):
-    a,b=0,1
-    for _ in range(n):
-        print(a,end="")
-        a,b=b,a+b
-        
-n=int(input("enter the n"))
-fib(n)        
-        
+str=input("enter the string:")
+n=len(str)
+if n>2:
+   if str[-3:]=="ing":
+      print(str+"ly")
+   else:
+      print(str+"ing")   
