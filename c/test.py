@@ -1,17 +1,16 @@
-def pal():
-   
-   n=int(input("enter number"))
-   orginal=n
-   rev=0
-   if n>0:
-     digit = n % 10
-     rev = rev * 10 + digit
-     n = n // 10
-     
-   
-   if orginal==rev:
-      print("pal")
+def prime():
+   n=int(input("enter num:"))
+   if n>1:
+      isprime= True
+      for i in range(2,n):
+         if n%i==0:
+            isprime=False
+      if isprime==True:
+         print("prime")
+      else:
+         print("no")
    else:
-      print("no")      
-     
-pal()      
+      print("no")            
+prime()      
+            
+      
