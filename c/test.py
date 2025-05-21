@@ -1,7 +1,17 @@
-str=input("enter the string:")
-n=len(str)
-if n>2:
-   if str[-3:]=="ing":
-      print(str+"ly")
+def pal():
+   
+   n=int(input("enter number"))
+   orginal=n
+   rev=0
+   if n>0:
+     digit = n % 10
+     rev = rev * 10 + digit
+     n = n // 10
+     
+   
+   if orginal==rev:
+      print("pal")
    else:
-      print(  str+"ing")   
+      print("no")      
+     
+pal()      
