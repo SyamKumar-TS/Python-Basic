@@ -1,13 +1,9 @@
 def prime():
    n=int(input("enter num:"))
-   a=0
-   b=1
-   for _ in range(n):
-      print(a,end="")
-      c=a+b
-      a=b
-      b=c 
-      
+   fact=1
+   for i in range(1,n+1):
+      fact=fact*i
+   print(fact)      
           
 prime()      
             
