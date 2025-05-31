@@ -10,4 +10,5 @@ else:
 if count==len(str1):
     print("anagram")
 else:
+    
     print("not")                   
